@@ -2,7 +2,7 @@
  * @Author: SunBOY
  * @Date: 2022-10-28 15:41:38
  * @LastEditors: SunBOY
- * @LastEditTime: 2022-10-30 14:39:38
+ * @LastEditTime: 2022-10-30 15:10:15
  * @FilePath: \src\axios\axios.js
  * @Description:
  * Copyright 2022 OBKoro1, All Rights Reserved.
@@ -11,7 +11,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "//gmall-h5-api.atguigu.cn",
+  baseURL: "http://gmall-h5-api.atguigu.cn",
   timeout: 5000,
 });
 instance.interceptors.request.use(

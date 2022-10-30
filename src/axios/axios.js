@@ -2,7 +2,7 @@
  * @Author: SunBOY
  * @Date: 2022-10-28 15:41:38
  * @LastEditors: SunBOY
- * @LastEditTime: 2022-10-30 15:10:15
+ * @LastEditTime: 2022-10-30 15:25:12
  * @FilePath: \src\axios\axios.js
  * @Description:
  * Copyright 2022 OBKoro1, All Rights Reserved.
@@ -10,8 +10,10 @@
  */
 import axios from "axios";
 
+let URL = "https://vue3-admin-ibxhvlwz9-hyxieshi.vercel.app";
+let turl = "http://gmall-h5-api.atguigu.cn";
 const instance = axios.create({
-  baseURL: "http://gmall-h5-api.atguigu.cn",
+  baseURL: URL,
   timeout: 5000,
 });
 instance.interceptors.request.use(

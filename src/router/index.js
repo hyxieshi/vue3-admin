@@ -2,7 +2,7 @@
  * @Author: SunBOY
  * @Date: 2022-10-25 17:58:01
  * @LastEditors: SunBOY
- * @LastEditTime: 2022-10-30 02:26:22
+ * @LastEditTime: 2022-10-30 14:25:35
  * @FilePath: \src\router\index.js
  * @Description:
  * Copyright 2022 OBKoro1, All Rights Reserved.
@@ -73,7 +73,7 @@ const router = createRouter({
       component: () => import("@/views/404.vue"),
       hidden: true,
     },
-    // { path: "*", redirect: "/404", hidden: true },
+    { path: "/:catchAll(.*)", redirect: "/404", hidden: true },
   ],
 });
 
